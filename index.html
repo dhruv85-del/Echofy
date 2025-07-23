@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echofy - Web player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="home bg-grey rounded m-1 ">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="Echofy Logo">
+                    <span class="logo-text">Echofy</span>
+                </div>
+                <ul>
+                    <li><img class="invert" src="house-door-fill.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="Home">search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1">
+                <div class="heading">
+                    <h2>
+                        <span class="library-icon">
+                            <!-- Example SVG icon for library/bookshelf -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2v12h1V2H2zm2 0v12h1V2H4zm2 0v12h1V2H6zm2 0v12h1V2H8zm2 0v12h1V2h-1zm2 0v12h1V2h-1z" />
+                            </svg>
+                        </span>
+                        your library
+                    </h2>
+
+                </div>
+                <div class="songlist">
+
+                    <ul>
+                        <li>
+                            <span class="music-logo">
+                                <img src="music.svg" alt="music" />
+                            </span>
+                            <span class="song-info">
+                                <span class="song-name">Song Title</span>
+                                <span class="song-artist">Artist Name</span>
+                            </span>
+                            <button class="play-song-btn">
+                                <svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div data-testid="left-sidebar-footer">
+                        <div data-testid="left-sidebar-legal-links">
+                            <div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/legal/" data-encore-id="textLink" id="">
+                                        <span data-encore-id="type">Legal</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/safetyandprivacy/" data-encore-id="textLink"
+                                        id="">
+                                        <span data-encore-id="type">Safety &amp; Privacy Center</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                                        data-encore-id="textLink" id="">
+                                        <span data-encore-id="type">Privacy Policy</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                                        data-encore-id="textLink" id="">
+                                        <span data-encore-id="type">Cookies</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                                        data-encore-id="textLink" id="">
+                                        <span data-encore-id="type">About Ads</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/accessibility/" data-encore-id="textLink"
+                                        id="">
+                                        <span data-encore-id="type">Accessibility</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                                rel="noopener">
+                                <span data-encore-id="text">Cookies</span>
+                            </a>
+                        </div>
+                        <div>
+                            <button data-testid="language-selection-button" data-encore-id="buttonSecondary">
+                                <span aria-hidden="true">
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                English
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="right border bg-grey rounded ">
+            <div class="header">
+                <div class="nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button>Signup</button>
+                    <button>Login</button>
+                </div>
+            </div>
+            <div class="echofy-playlist"></div>
+            <h1>Echofy Playlist</h1>
+
+            <div class="cardcontainer">
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img1.webp" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>Water</h2>
+                    <p>Hits to boost your mood and fill you with happiness!</p>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img2.jpg" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>Lalkara</h2>
+                    <p>Relax and unwind with these chill tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img3.jpeg" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>Apna Bana Le</h2>
+                    <p>Get pumped with energetic workout tunes!</p>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img4.jpeg" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>On TOP</h2>
+                    <p>Timeless rock anthems for every mood.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img5.jpg" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>Saiyaara</h2>
+                    <p>Today's hottest pop hits for your party!</p>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img7.jpg" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>We Rollin</h2>
+                    <p>Fresh indie sounds to discover and enjoy.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img8.jpg" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>Aashiq Tera</h2>
+                    <p>Stay productive with these focus tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img9.jpg" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>Naina</h2>
+                    <p>Unplug and relax with acoustic melodies.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img10.webp" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>295</h2>
+                    <p>Start your day with uplifting morning tracks.</p>
+                </div>
+  
+                <div class="card">
+                    <div class="card-img-wrap">
+                        <img src="images/img12.jpeg" alt="">
+                        <button class="play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8.697l-5.481 3.13A.5.5 0 0 1 4 11.382V4.618a.5.5 0 0 1 .323-.464l5.481 3.13a.5.5 0 0 1 0 .913z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>Bandana</h2>
+                    <p>bandana</p>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="songinfo">
+
+                </div>
+                <div class="songbutton">
+                    <img src="previous-back-svgrepo-com.svg" alt="previous-back-svgrepo-com">
+                    <img src="play.svg" alt="play">
+                    <img src="next-button-svgrepo-com.svg" alt="next-button-svgrepo-com">
+                </div>
+                <div class="songtime"></div>
+                <div class="progress-container">
+                    <span class="progress-time progress-current">0:00</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill"></div>
+                    </div>
+                    <span class="progress-time progress-total">0:00</span>
+                </div>
+                <div class="volume-container">
+                    <button class="mute-btn" aria-label="Mute" style="background:none;border:none;cursor:pointer;padding:0 8px 0 0;">
+                        <svg class="mute-icon" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M9 4.5v7a.5.5 0 0 1-.757.429L5.825 10H3.5A1.5 1.5 0 0 1 2 8.5v-1A1.5 1.5 0 0 1 3.5 6h2.325l2.418-1.929A.5.5 0 0 1 9 4.5z"/>
+                        </svg>
+                    </button>
+                    <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
